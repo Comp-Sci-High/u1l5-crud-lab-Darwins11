@@ -34,21 +34,28 @@ song.listenedTo = "false"
 delete song.artist 
 
 // Commit your changes with an appropriate message.
+//delete object
 // ----------------------------------
 // NESTED ARRAYS & OBJECTS SECTION
 // Task 8: Create an object called 'album' with properties song's album's 'name', 'year', and 'songs' (leave 'songs' as empty array for now)
-
+const album = {
+    name:"Sleepy for President",
+    year: 2021 , 
+    songs: []
+}
 
 // Task 9: Add your song object (task 5) to the empty songs array in the album object
-
+album.songs = song
 
 // Console log the length of the album's songs array to confirm it worked
+console.log(album.songs.length)
 
 // Task 10: Update the title of the song to be all lowercase. 
 // Console log the album object to check your change
-
+console.log(album)
 
 // Commit your changes with an appropriate message.
+//album done
 // ----------------------------------
 // EXTRA CREDIT
 // Use prompt-sync to prompt the user to enter the title, artist, and duration
